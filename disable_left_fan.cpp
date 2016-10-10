@@ -78,7 +78,7 @@ std::string time_to_string() {
 
 void say_hello() {
     std::ofstream myfile;
-    myfile.open("state.txt", std::ofstream::out | std::ofstream::app);
+    myfile.open("/home/status.txt", std::ofstream::out | std::ofstream::app);
     myfile << "Started " << time_to_string() << "\n";
     myfile.close();
 }
